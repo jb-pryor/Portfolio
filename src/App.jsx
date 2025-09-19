@@ -7,8 +7,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 export default function App() {
   return (
     <div className="app">
-      <button className='dayNite'><i className='fa-solid fa-sun'></i></button>
-      
+     {/* <button className='dayNite'><i className='fa-solid fa-sun'></i></button>*/}
+      <input type='checkbox' id='darkmode-toggle'></input>
+      <label for="darkmode-toggle"></label>
       <div className="sidebar">
         <img src='/src/assets/sunset.jpg' alt='Example' width='200' height='60' className='sunset'/>
         <img src='/src/assets/7A6A1293.jpg' alt='ProfilePic' width='50' height='50' className='circleImg'/>

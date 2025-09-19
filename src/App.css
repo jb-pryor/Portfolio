@@ -25,6 +25,10 @@ body {
   align-self: flex-start; /* so it doesn't stretch with flex */
 
   text-align: center;
+  border-radius: 10px;
+
+  border: 2px solid transparent; /* base border */
+  box-shadow: 0 0 10px 2px rgba(177, 95, 255, 0.7);
 }
 
 /* Main content */
@@ -36,6 +40,8 @@ body {
   color: white;
   border-radius: 10px;
   height: 2000px;
+  border: 2px solid transparent; /* base border */
+  box-shadow: 0 0 10px 2px rgba(0, 255, 242, 0.7);
 }
 
 .circleImg {
@@ -54,19 +60,29 @@ body {
 }
 
 .contact {
-  margin-top: 250px;
+  margin-top: 160px;
 }
 
 .contact:hover {
   color: blue;
+  cursor: pointer;
 }
 
 button {
   position: absolute;
   right: 30px;
   top: 30px;
-  width: 30px;
-  height: 20px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: grey;
+
+  border: 2px solid transparent; /* base border */
+  box-shadow: 0 0 10px 2px rgba(255, 26, 26, 0.7);
+}
+
+button i {
+  font-size: 17px;
 }
 
 .location {
@@ -74,3 +90,8 @@ button {
   margin-top: -10px;
   font-size: 14px;
 }
+
+.sunset {
+  border-radius: 10px;
+}
+

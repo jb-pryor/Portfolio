@@ -26,8 +26,24 @@ export default function App() {
 
       <div className="main">
         <h1>Projects</h1>
-        <p>
-        </p>
+        <div className='proj'>
+          <h2>Mario Level Maker</h2>
+          <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
+          <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
+          <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+        </div>
+        <div className='proj'>
+          <h2>Stock Tracker</h2>
+          <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
+          <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
+          <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+        </div>
+        <div className='proj'>
+          <h2>Look Up!</h2>
+          <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
+          <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
+          <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+        </div>
         <h1>About</h1>
         <p>
           21 year old software developer. Graduating with a bachelors of science in computer science: software engineering, i am passionate and enthusiastic to leave my mark on the technical world. 

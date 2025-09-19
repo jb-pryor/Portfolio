@@ -60,7 +60,7 @@ body {
 }
 
 .contact {
-  margin-top: 160px;
+  margin-top: 115px;
 }
 
 .contact:hover {
@@ -135,5 +135,22 @@ input:checked + label:after {
 }
 label:active:after {
   width: 40px;
+}
+
+.proj {
+  width: 790px;
+  height: 200px;
+  background-color: darkgoldenrod;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+li {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: -10px;
 }
 

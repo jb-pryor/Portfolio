@@ -1,0 +1,76 @@
+/* Background */
+body {
+  background-color: black;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Parent flex container */
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: rgb(88, 88, 88);
+  width: 200px;
+  height: 400px;
+
+  /* Sticky behavior */
+  position: sticky;
+  top: 20px;   /* sticks when it hits 20px from top */
+  align-self: flex-start; /* so it doesn't stretch with flex */
+
+  text-align: center;
+}
+
+/* Main content */
+.main {
+  background-color: rgb(59, 59, 59);
+  width: 800px;
+  padding: 20px;
+  margin-top: 50px; /* space from top */
+  color: white;
+  border-radius: 10px;
+  height: 2000px;
+}
+
+.circleImg {
+  border-radius: 50%;  /* makes it a circle */
+  object-fit: cover;   /* zoom/crop to fill */
+  border: 3px solid rgb(88, 88, 88); /* white outline */
+  margin-top: -1000px;
+  margin-left: -2px;
+}
+
+.name {
+
+  margin-top: 0px;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.contact {
+  margin-top: 250px;
+}
+
+.contact:hover {
+  color: blue;
+}
+
+button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 20px;
+}
+
+.location {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -10px;
+  font-size: 14px;
+}

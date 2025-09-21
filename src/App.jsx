@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import SideBar from './SideBar'
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -6,7 +6,40 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function App() {
 
-  //,const
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+
+    let i = 0;
+    let deleting = false;
+    let currentText = "Hello world!";
+    const nextText = "Hello there!";
+
+    const interval = setInterval(() => {
+      if (!deleting) {
+        if (i < currentText.length) {
+          setText(currentText.substring(0, i + 1));
+          i++;
+        } else {
+          // pause before deleting
+          setTimeout(() => (deleting = true), 1000);
+        }
+      } else {
+        if (i > 6) { // keep "Hello "
+          i--;
+          setText(currentText.substring(0, i));
+        } else {
+          // switch to new phrase
+          deleting = false;
+          currentText = nextText;
+          i = 6;
+        }
+      }
+    }, 150);
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   return (
     <div className="app">
@@ -29,7 +62,8 @@ export default function App() {
 
       <div className="main">
         <div className='sec1'>
-          <h1>Hello world!</h1>
+         { /*<h1>Hello world!</h1>*/}
+          <h1>{text}<span className="cursor">|</span></h1>
           <p>My name is James Pryor</p>
           <p>or just JB</p>
           <h2>I create things for the web.</h2>

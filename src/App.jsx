@@ -69,34 +69,36 @@ export default function App() {
           <h2>I create things for the web.</h2>
         </div>
         <div className='sec2'>
-          <h1>Projects</h1>
+          <h1>Projects = {"["}</h1>
           <div className='proj'>
             <h2>Mario Level Maker</h2>
             <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
             <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
-            <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+            <a href='mario.html'>MarioMakerLevel-repo.com <i className='fa-solid fa-link'></i></a>
           </div>
           <div className='proj'>
             <h2>Stock Tracker</h2>
             <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
             <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
-            <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+            <a href='mario.html'>MarioMakerLevel-repo.com <i className='fa-solid fa-link'></i></a>
           </div>
           <div className='proj'>
             <h2>Look Up!</h2>
             <p>This is a short description of my project. Basically talking about what it is what it does and what problem caused the creation of the program and how it solves that problem.</p>
             <p>Tools Used: Java, JavaFX, JGrasp, File reading/writing, Player physics, data querying/fetching</p>
-            <a href='mario.html'>MarioMakerLevel GitHub Link</a>
+            <a href='mario.html'>MarioMakerLevel-repo.com <i className='fa-solid fa-link'></i></a>
           </div>
+          <h1>{'];'}</h1>
         </div>
+
         <div className='sec3'>
-          <h1>About</h1>
+          <h1>About =</h1>
           <p>
-              21 year old software developer. Graduating with a bachelors of science in computer science: software engineering, i am passionate and enthusiastic to leave my mark on the technical world. 
+              "21 year old software developer. Graduating with a bachelors of science in computer science: software engineering, i am passionate and enthusiastic to leave my mark on the technical world. 
             Worked with react to create websites, used figma to design webpages, use git for version control, vs code as primary ide, node.js and springboot, unity.
             Eager to dive into AI and machine learning, that is one of my highest items on my checklist, as well as developing/creating video games using unity or other game engines like unreal engine, using C# or C++, also fullstack engineering, creating the frontend and the backend to ship my own product. 
             That's why i got into compSci: to have the ability to create whatever I wanted. 
-            Lot of us do not realize the powerful tool we have at our fingertips. Don't fear the man that wastes all his energy attacking you, fear the man that types a few lines on his computer attacking you.
+            Lot of us do not realize the powerful tool we have at our fingertips. Don't fear the man that wastes all his energy attacking you, fear the man that types a few lines on his computer attacking you";
           </p>
           <div className='photoRow'>
             <img src='/src/assets/compSci2.jpg'/>
